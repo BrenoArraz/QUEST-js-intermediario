@@ -1,0 +1,123 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #e3dbdb;
+}
+
+.main{
+  background-image: url(../images/bg.png);
+  background-repeat: repeat;
+  height: 400px;
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.esquerda{
+  max-width: 300px;
+  margin-left: 50px;
+  color: #ffff;
+}
+
+.esquerda .titulo{
+  font-weight: 900;
+  font-size: 20px;
+  margin-bottom: 11px;
+}
+
+.esquerda .paragrafo{
+  font-weight: 400;
+  font-size: 15px;
+  
+}
+
+.direita{
+  width: 340px;
+  height: 378px;
+  background-color: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 75px;
+}
+
+.direita .inputs{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.direita .caixa{
+  position: relative;
+}
+
+.direita .input{
+  width: 298.01px;
+  height: 35.11px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.direita .input.mensagem{
+  height: 100px;
+  padding-top: 8px;
+}
+
+.direita ::placeholder{
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.direita .msg{
+  font-weight: 400;
+  font-size: 15px;
+  margin-right: 160px;
+  margin-top: 15px;
+  margin-bottom: 11px;
+}
+
+.direita .btn{
+  display: flex;
+  font-weight: 700;
+  font-size: 15px;
+  width: 298.01px;
+  height: 41.13px;
+  background: #3CCC87;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+}
+
+
+.inputs .obrigatorio{
+  font-weight: 400;
+  font-size: 8px;
+  color: red;
+  position: absolute;
+}
+
+.inputs .obg{
+  bottom: -6px;
+}
+
+.caixa.off .obrigatorio{
+  display: none;
+}
+
+.inputs .input.borda{
+  border: solid 1px red;
+}
+
+.inputs .input.ok{
+  border: solid 1px green;
+}
