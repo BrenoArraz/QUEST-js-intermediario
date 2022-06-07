@@ -16,6 +16,14 @@ enviar.addEventListener('click', function() {
       inputVazio.classList.remove('borda')
       inputVazio.classList.add('ok')
     }
-   
+    
   })
+})
+
+
+enviar.addEventListener('click', function(){
+  const inputVazio = document.querySelector('.input');
+  if(inputVazio.value === ''){
+    alert('Campos obrigatórios precisam ser preenchidos')
+  }
 })
